@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <div data-link="home">
+            Home
+        </div>
+        <div data-link="about">
+            About
+        </div>
+        <div data-link="services">
+            Services
+        </div>
+        <div data-link="makeAppointment">
+            Make an Appointment
+        </div>
+    </nav>
+    <div id="booking">
+        <div id="appointmentPart">
+            <div id="appointments"></div>
+            <div id="appointment-new">
+                <h4>Add an Appointment!</h4>
+                <div>Customer Name<input type="text" id="customer-name" /></div>
+                <div>Contact Information<input type="text" id="customer-cont" /></div>
+                <div>Details<input type="text" id="appointment-details" /></div>
+                <div>Appointment Date & Time<input type="datetime-local" id="appointment-date" /></div>
+                <div>Is it confirmed?<input type="checkbox" id="appointment-confirmed" /></div>
+                <div>Comments or thoughts you want to share it with us from your last visit?<input type="text"
+                        id="appointment-comments" /></div>
+                <input type="button" id="appointment-submit" class="btn" value="Add" />
+            </div>
+            <div id="appointment-edit">
+                <h3>Enter customer number to reconfirm his appointment!</h3>
+                <input type="text" id="appointment-update" />
+                <input type="button" id="btnupdate" class="btn" value="Confirm" />
+            </div>
+            <div id="appointment-cancel">
+                <h3>Enter customer number to delete his appointment!</h3>
+                <input type="text" id="appointment-delete" />
+                <input type="button" id="btndelete" class="btn" value="Delete" />
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div>
+            <h4>Our Services</h4>
+        </div>
+        <div id="service">
+            <div>
+                <h3>Hairstyling</h3>
+                <p>Hair Cut.......$20</p>
+                <p>Hair Styling...$9</p>
+                <p>Hair Triming...$10</p>
+            </div>
+            <div>
+                <h3>Shaving</h3>
+                <p>Clean Shaving...$20</p>
+                <p>Beard Triming...$20</p>
+                <p>Smooth Shave....$15</p>
+            </div>
+            <div>
+                <h3>Face Masking</h3>
+                <p>White Facial....$16</p>
+                <p>Face Cleaning...$20</p>
+                <p>Bright Tuning...$14</p>
+            </div>
+        </div>
+        <div><img id="imgServices" src="./css/img/services.jpg" /></div>
+    </div>
+    <div id="gallery">
+        <div class="galleries"><button id="show-mini"></button>
+            <caption>BackStreet Boys Hairstyling Cuts</caption>
+        </div>
+        <div id="minigallery">
+            <img src="./css/img/Bsb.jpg" />
+            <img src="./css/img/BsbNick.jpg" />
+            <img src="./css/img/BsbNick1.jpg" />
+            <img src="./css/img/Kevin1.jpg" />
+            <img src="./css/img/Bsb1.jpg" />
+            <img src="./css/img/Howie.jpg" />
+        </div>
+        <div class="galleries"><button id="show-mini1"></button>
+            <caption>WestLife Hairstyling Cuts</caption>
+        </div>
+        <div id="minigallery1">
+            <img src="./css/img/westLife.jpg" />
+            <img src="./css/img/westLife1.jpg" />
+            <img src="./css/img/westLife2.jpg" />
+            <img src="./css/img/westLife3.jpg" />
+            <img src="./css/img/westLife4.jpg" />
+            <img src="./css/img/westLife5.jpg" />
+        </div>
+        <div class="galleries"><button id="show-mini2"></button>
+            <caption>Eagles Hairstyling Cuts</caption>
+        </div>
+        <div id="minigallery2">
+            <img src="./css/img/eagles1.jpg" />
+            <img src="./css/img/eagles2.jpg" />
+            <img src="./css/img/eagles3.jpg" />
+            <img src="./css/img/eagles4.jpg" />
+        </div>
+    </div>
+    <footer>Salon ©2022</footer>
+    <script src="./js/todo.js"></script>
+</body>
+
+</html>

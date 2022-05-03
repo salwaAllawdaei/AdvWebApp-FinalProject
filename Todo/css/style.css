@@ -1,0 +1,221 @@
+nav {
+    background-color: rgba(246, 237, 237, 0.747);
+    width: 100vw;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+body {
+    margin: 0;
+    color: chartreuse;
+    font-size: x-large;
+    margin-left: 10px;
+
+}
+
+#booking {
+    background-image: url('./img/salonAppointment.jpg');
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    /* 5px rounded corners */
+
+
+}
+
+#appointmentPart {
+    margin-left: 10px;
+}
+
+
+
+#appointments .completetrue {
+    color: aliceblue;
+
+}
+
+button:hover {
+    padding: 2px;
+    background-color: blueviolet;
+    font-weight: 500;
+    font-size: large;
+}
+
+#appointment-submit:hover {
+    padding: 2px;
+    background-color: blueviolet;
+    font-weight: 500;
+    font-size: large;
+    color: aliceblue;
+}
+
+#btnupdate:hover {
+    padding: 2px;
+    background-color: blueviolet;
+    font-weight: 500;
+    font-size: large;
+    color: aliceblue;
+}
+
+#btndelete:hover {
+    padding: 2px;
+    background-color: blueviolet;
+    font-weight: 500;
+    font-size: large;
+    color: aliceblue;
+}
+
+#appointment-submit {
+    width: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#btndelete {
+    width: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#btnupdate {
+    width: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#service {
+    /* display: flex; */
+    color: black;
+    width: 100vw;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+h4 {
+    text-align: center;
+    background-color: rgba(246, 237, 237, 0.747);
+    color: orange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+footer {
+    background-color: rgba(246, 237, 237, 0.747);
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#imgServices {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+#appointment-comments {
+    width: 50%;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#appointment-confirmed {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#appointment-date {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#customer-name {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#customer-cont {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#appointment-details {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#appointment-delete {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+#appointment-update {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+#show-mini {
+    background-image: url('./img/Bsb1.jpg');
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+
+}
+
+#show-mini1 {
+    background-image: url('./img/westLife6.jpg');
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+
+}
+
+#show-mini2 {
+    background-image: url('./img/eagles.jpg');
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+
+}
+
+.galleries {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#gallery {
+    display: block;
+
+}
