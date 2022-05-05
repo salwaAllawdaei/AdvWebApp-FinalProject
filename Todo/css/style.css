@@ -127,6 +127,9 @@ footer {
     transition: 0.3s;
     border-radius: 5px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%
 }
 
 #imgServices {
