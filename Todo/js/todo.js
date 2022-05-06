@@ -142,10 +142,3 @@ document.getElementById("show-mini2").addEventListener("click", function () {
     showHide2();
 });
 
-var contactPageEl = document.getElementsByClassName("contact1");
-var contactPage = document.getElementById("contact");
-
-contactPageEl.addEventListener("click", () => {
-    contactPage.style.display = "block";
-
-})
