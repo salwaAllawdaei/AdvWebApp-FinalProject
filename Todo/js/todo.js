@@ -144,45 +144,39 @@ document.getElementById("show-mini2").addEventListener("click", function() {
 // contactPageEl.addEventListener("click", () => {
 //     contactPage.style.display = "block";
 
-// })
+// });
 
 
-/**
- * Sample JavaScript code for youtube.search.list
- * See instructions for running APIs Explorer code samples locally:
- * https://developers.google.com/explorer-help/code-samples#javascript
- */
 
-function authenticate() {
-    return gapi.auth2.getAuthInstance()
-        .signIn({ scope: "https://www.googleapis.com/auth/youtube.force-ssl" })
-        .then(function() { console.log("Sign-in successful"); },
-            function(err) { console.error("Error signing in", err); });
-}
+//Fetch Flickr api
 
-function loadClient() {
-    gapi.client.setApiKey("AIzaSyBpm9oNg63YoQ7vAcIFFaJ9RtPoTZKMtvM");
-    return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
-        .then(function() { console.log("GAPI client loaded for API"); },
-            function(err) { console.error("Error loading GAPI client for API", err); });
-}
-// Make sure the client is loaded and sign-in is complete before calling this method.
-let query = document.getElementById("qValue").innerHTML;
+// var Flickr = require('flickr-sdk');
+var key = "1bf81cfd93859e7da85857043d819867";
+var secret = "9ab95f17ffed9ed7";
 
-function execute() {
+let getResponseImage = document.getElementById("responseImage");
+let getResponseImageInnerhtml = document.getElementById("responseImage").innerHTML;
+let flickrText = document.getElementById("flickrText");
+let flickrButton = document.getElementById("flickrButton");
 
-    return gapi.client.youtube.search.list({
-            "part": [
-                "snippet"
-            ],
-            "q": query
-        })
-        .then(function(response) {
-                // Handle the results here (response.result has the parsed body).
-                console.log("Response", response);
-            },
-            function(err) { console.error("Execute error", err); });
-}
-gapi.load("client:auth2", function() {
-    gapi.auth2.init({ client_id: "YOUR_CLIENT_ID" });
-});
+
+let title;
+let id;
+let finalUrl;
+let firstPhoto;
+flickrButton.addEventListener("click", async() => {
+    let hairstyle = flickrText.innerText;
+    let url = ` https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key}&text=${hairstyle}&sort=relevance&format=json&nojsoncallback=`;
+
+    await fetch(url).then(res => res.json()).then(data => {
+        console.log(data);
+        finalUrl = `https://live.staticflickr.com/${data.photos.photo[0].server}/${data.photos.photo[0].id}_${data.photos.photo[0].secret}.jpg`;
+        getResponseImage.src = finalUrl;
+    });
+
+    hairstyle = null;
+
+
+
+
+})
