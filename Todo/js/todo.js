@@ -157,6 +157,9 @@ let title;
 let id;
 let finalUrl;
 let firstPhoto;
+flickrText.addEventListener("change", () => {
+
+})
 flickrButton.addEventListener("click", async() => {
     hairstyle = flickrText.innerText;
 
