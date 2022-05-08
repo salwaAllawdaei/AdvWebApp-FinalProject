@@ -14,6 +14,11 @@ nav {
     width: 100%
 }
 
+nav:hover {
+    color: orange;
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     color: chartreuse;
@@ -34,6 +39,7 @@ body {
 
 #appointmentPart {
     margin-left: 10px;
+
 }
 
 
@@ -102,6 +108,23 @@ button:hover {
     cursor: pointer;
 }
 
+#flickrButton {
+    width: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#flickerButton:hover {
+    padding: 2px;
+    background-color: blueviolet;
+    font-weight: 500;
+    font-size: large;
+    color: aliceblue;
+    cursor: pointer;
+}
+
 #service {
     /* display: flex; */
     color: black;
@@ -113,16 +136,14 @@ button:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
+
+
+}
+
+.service {
     margin-left: 10px;
-
 }
 
-#services {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-
-}
 
 h4 {
     text-align: center;
@@ -234,6 +255,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-left: 10px;
+
 }
 
 #gallery {
@@ -276,4 +299,9 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
+
+}
+
+#contactInfo {
+    margin-left: 10px;
 }
