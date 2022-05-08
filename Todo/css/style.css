@@ -11,12 +11,17 @@ nav {
     margin: 10px;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 
-nav:hover {
+a {
+    text-decoration: none;
+}
+
+a:hover {
     color: orange;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 body {
