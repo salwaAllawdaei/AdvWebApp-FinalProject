@@ -152,18 +152,19 @@ let getResponseImageInnerhtml = document.getElementById("responseImage").innerHT
 let flickrText = document.getElementById("flickrText");
 let flickrButton = document.getElementById("flickrButton");
 let hairstyle;
-let url = ` https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${key}&text=${hairstyle}&sort=relevance&format=json&nojsoncallback=1`;
+let url;
 let title;
 let id;
 let finalUrl;
 let firstPhoto;
 flickrText.addEventListener("change", () => {
-
+    hairstyle = flickrText.value;
 })
 flickrButton.addEventListener("click", async() => {
-    hairstyle = flickrText.innerText;
 
-
+    url = ` https://www.flickr.com/services/rest/?method=flickr.photos.search&
+api_key=${key}&text=${hairstyle}&sort=relevance&format=json&nojsoncallback=1`;
+    console.log(hairstyle);
     await fetch(url).then(res => {
         console.log(res)
         return res.json();
